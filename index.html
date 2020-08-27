@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <style>
+        body{
+            background: gray;
+            text-align: center;
+        }
+        h1{
+            font-size: 42px;
+        }
+        input{
+            width: 50%;
+            margin: 2% 2%;
+            height: 42px;
+            font-size: 32px;
+        }
+        button{
+            height: 42px;
+        }
+        #tasks{
+            background-color: white;
+            width: 60%;
+            height: 800px;
+            overflow:auto;
+            margin: 0 auto;
+            color: black;
+        }
+        #tasks div{
+            border:1px solid grey;
+            margin: 2%;
+            font-size: 32px;
+            padding:5%;
+            box-sizing: border-box;
+        }
+        #delete{
+            cursor: pointer;
+            float: right;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>ToDo lists</h1>
+    <input type="text" id="newtask">
+    <button id="add">Add!</button>
+    <div id="tasks"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
